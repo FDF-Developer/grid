@@ -1,0 +1,85 @@
+/* lexend-deca-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Lexend Deca-400";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../asserts/fonts/lexend-deca-v21-latin-regular.woff2") format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lexend-deca-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Lexend Deca-700";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../asserts/fonts/lexend-deca-v21-latin-700.woff2") format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca-400";
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    max-width: 1450px;
+    margin: auto;
+    padding: 0 20px;
+}
+.hero_card_ul{
+    list-style: none;
+    color: white;
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(3,307px);
+    grid-auto-flow: column;
+    margin-bottom: 100px;
+}
+.hero_card_ul img{
+    margin-bottom: 15px;
+}
+.hero_card_ul h2{
+    font-family:  "Lexend Deca-700";
+    margin-bottom: 25px;
+}
+.hero_card_ul p{
+    margin-bottom: 80px;
+}
+.hero_card_ul li{
+    padding: 48px 48px 48px 48px;
+}
+.hero_card_li_Sedans{
+    background: #E28625;
+}
+.hero_card_li_SUVs{
+    background: #006971;
+}
+.hero_card_li_Luxury{
+    background: #004140;
+}
+.hero_card_li_Sedans a{
+    color:  #E28625;
+}
+.hero_card_li_SUVs a{
+    color:  #006971;
+}
+.hero_card_li_Luxury a{
+    color: #004140;
+}
+a{
+    color: white;
+    background: white;
+    text-decoration: none;
+    width: 146px;
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px;
+}
+.btn:active{
+    background: transparent;
+    color: white;
+}
